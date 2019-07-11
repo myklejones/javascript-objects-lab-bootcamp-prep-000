@@ -29,11 +29,6 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
  }
  
  //Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):TypeError: Cannot read property 'prop' of undefined
- 
- function deleteFromObjectByKey(object, key){
-  
-
-}   
 
  //Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
    //  ReferenceError: destructivelyDeleteFromObjectByKey is not defined
