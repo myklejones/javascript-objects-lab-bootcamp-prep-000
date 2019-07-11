@@ -1,5 +1,5 @@
 // Object defines a 'recipes'object
-var recipes = {}
+var recipes = {};
 
 
 //object updateObjectWithKeyAndValue() returns an object with the orignal key value pair:
@@ -13,7 +13,7 @@ function updateObjectWithKeyAndValue(object, key, value){
 //Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given `key` and `value` (it is destructive) and returns theentire updated object
  //ReferenceError: destructivelyUpdateObjectWithKeyAndValue is not defined
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
- object[key]=value
+ object[key]=value;
   return object; 
 }
 
@@ -21,11 +21,11 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   //ReferenceError: deleteFromObjectByKey is not defined
   
  function deleteFromObjectByKey(object, key){
- const newobj = Object.assign({}, object)
+ const newobj = Object.assign({}, object);
  
-  delete newobj[key]
+  delete newobj[key];
   
-  return newobj
+  return newobj;
  }
  
  //Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):TypeError: Cannot read property 'prop' of undefined
@@ -33,8 +33,10 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
  //Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
    //  ReferenceError: destructivelyDeleteFromObjectByKey is not defined
    function destructivelyDeleteFromObjectByKey(object, key){
-     delete object[key]
-     return object[key]
+     delete object[key];
+     
+     return object;
+     
    }
    
   // Objects destructivelyDeleteFromObjectByKey(object, key) modifies the original object:
