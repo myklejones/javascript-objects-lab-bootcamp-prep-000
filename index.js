@@ -35,12 +35,11 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
  //Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
    //  ReferenceError: destructivelyDeleteFromObjectByKey is not defined
    function destructivelyDeleteFromObjectByKey(object, key){
+     delete object[key]
      return object[key]
    }
    
   // Objects destructivelyDeleteFromObjectByKey(object, key) modifies the original object:
     // Error: Expected 1 to be undefined
    
-   function destructivelyDeleteFromObjectByKey(object, key){
-     
-        }
+ 
