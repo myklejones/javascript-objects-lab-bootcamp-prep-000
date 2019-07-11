@@ -22,7 +22,10 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   
  function deleteFromObjectByKey(object, key){
  const newobj = Object.assign({}, object)
+ 
   delete newobj[key]
+  
+  return newobj
  }
  
  //Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):TypeError: Cannot read property 'prop' of undefined
